@@ -9,8 +9,6 @@ function getConfigValue(source, config) {
 }
 
 function resolve(source, file, config) {
-  console.log(source, file, config)
-
   const p = getConfigValue(source, config)
   if (p) {
     return nodeResolver.resolve(p, file, config)
